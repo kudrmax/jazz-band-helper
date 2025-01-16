@@ -1,15 +1,17 @@
 from telethon import TelegramClient, events
+from dotenv import load_dotenv
 import os
 
 # config
-chat_id = -1002367854241  # ID чата, куда пересылать сообщения
+chat_id = -1002367854241  # ID чата, куда пересылать сообщения # -4698701054
+chat_id = -4698701054  # ID чата, куда пересылать сообщения # -4698701054
 thread_id = 3450  # ID топика, куда пересылать сообщения
-# chat_id = -4698701054 # ID чата, куда пересылать сообщения
 channel_link = 'https://t.me/tempiuasygbdiuasgdbua'
 target_words = [
     'джаз', 'джазовый', 'джазовую', 'ищу', 'добрый день'
 ]
 
+load_dotenv()
 api_id = int(os.getenv("API_ID"))
 api_hash = os.getenv("API_HASH")
 bot_token = os.getenv("BOT_TOKEN")
